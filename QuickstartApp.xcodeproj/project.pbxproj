@@ -12,9 +12,12 @@
 		9B38A2B61D7EA7A400629298 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B38A2B41D7EA7A400629298 /* Main.storyboard */; };
 		9B38A2B81D7EA7A400629298 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B38A2B71D7EA7A400629298 /* Assets.xcassets */; };
 		9B38A2BB1D7EA7A400629298 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B38A2B91D7EA7A400629298 /* LaunchScreen.storyboard */; };
+		9B38A2C31D7EA90600629298 /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B38A2C21D7EA90600629298 /* GTMOAuth2ViewTouch.xib */; };
+		A5525499E486656CE2D66980 /* Pods_QuickstartApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD41B600E0EE945B85261291 /* Pods_QuickstartApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3117B81E01D4E774C940813F /* Pods-QuickstartApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickstartApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickstartApp/Pods-QuickstartApp.release.xcconfig"; sourceTree = "<group>"; };
 		9B38A2AD1D7EA7A400629298 /* QuickstartApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickstartApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B38A2B01D7EA7A400629298 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B38A2B21D7EA7A400629298 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		9B38A2B71D7EA7A400629298 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B38A2BA1D7EA7A400629298 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B38A2BC1D7EA7A400629298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B38A2C21D7EA90600629298 /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GTMOAuth2ViewTouch.xib; path = Pods/GTMOAuth2/Source/Touch/GTMOAuth2ViewTouch.xib; sourceTree = "<group>"; };
+		A5C76858C8024C824FCE161A /* Pods-QuickstartApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickstartApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickstartApp/Pods-QuickstartApp.debug.xcconfig"; sourceTree = "<group>"; };
+		FD41B600E0EE945B85261291 /* Pods_QuickstartApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickstartApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5525499E486656CE2D66980 /* Pods_QuickstartApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3595083AD3C07A4094017CEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD41B600E0EE945B85261291 /* Pods_QuickstartApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9B38A2A41D7EA7A400629298 = {
 			isa = PBXGroup;
 			children = (
+				9B38A2C21D7EA90600629298 /* GTMOAuth2ViewTouch.xib */,
 				9B38A2AF1D7EA7A400629298 /* QuickstartApp */,
 				9B38A2AE1D7EA7A400629298 /* Products */,
+				B05CE1E561424CC38CAC805D /* Pods */,
+				3595083AD3C07A4094017CEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +82,15 @@
 			path = QuickstartApp;
 			sourceTree = "<group>";
 		};
+		B05CE1E561424CC38CAC805D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5C76858C8024C824FCE161A /* Pods-QuickstartApp.debug.xcconfig */,
+				3117B81E01D4E774C940813F /* Pods-QuickstartApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B38A2BF1D7EA7A400629298 /* Build configuration list for PBXNativeTarget "QuickstartApp" */;
 			buildPhases = (
+				AA4AF6E11528A6D7624B8EB5 /* [CP] Check Pods Manifest.lock */,
 				9B38A2A91D7EA7A400629298 /* Sources */,
 				9B38A2AA1D7EA7A400629298 /* Frameworks */,
 				9B38A2AB1D7EA7A400629298 /* Resources */,
+				BFBD9685AF2E0BAD7A5A1E2A /* [CP] Embed Pods Frameworks */,
+				5F5EC24AAAE57F933F927103 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B38A2C31D7EA90600629298 /* GTMOAuth2ViewTouch.xib in Resources */,
 				9B38A2BB1D7EA7A400629298 /* LaunchScreen.storyboard in Resources */,
 				9B38A2B81D7EA7A400629298 /* Assets.xcassets in Resources */,
 				9B38A2B61D7EA7A400629298 /* Main.storyboard in Resources */,
@@ -130,6 +161,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5F5EC24AAAE57F933F927103 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickstartApp/Pods-QuickstartApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA4AF6E11528A6D7624B8EB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BFBD9685AF2E0BAD7A5A1E2A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickstartApp/Pods-QuickstartApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9B38A2A91D7EA7A400629298 /* Sources */ = {
@@ -248,6 +327,7 @@
 		};
 		9B38A2C01D7EA7A400629298 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5C76858C8024C824FCE161A /* Pods-QuickstartApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QuickstartApp/Info.plist;
@@ -259,6 +339,7 @@
 		};
 		9B38A2C11D7EA7A400629298 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3117B81E01D4E774C940813F /* Pods-QuickstartApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QuickstartApp/Info.plist;
@@ -287,6 +368,7 @@
 				9B38A2C11D7EA7A400629298 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
